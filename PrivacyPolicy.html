@@ -1,235 +1,464 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoinTrack 隱私權政策 | Privacy Policy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-        h1 {
-            color: #2d3748;
-            font-size: 2em;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .subtitle {
-            text-align: center;
-            color: #718096;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #4a5568;
-            font-size: 1.3em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e2e8f0;
-        }
-        h3 {
-            color: #2d3748;
-            font-size: 1.1em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        p, li {
-            color: #4a5568;
-            margin-bottom: 12px;
-        }
-        ul {
-            padding-left: 25px;
-        }
-        .highlight {
-            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-        .contact {
-            background: #f7fafc;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-        .date {
-            text-align: center;
-            color: #a0aec0;
-            font-size: 0.9em;
-            margin-top: 30px;
-        }
-        .lang-switch {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .lang-switch a {
-            color: #667eea;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .lang-switch a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CoinTrack privacy policy in Traditional Chinese and English.">
+  <title>CoinTrack Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --primary-soft: #ccfbf1;
+      --accent: #2563eb;
+      --warning-bg: #fffbeb;
+      --warning-text: #92400e;
+      --radius: 22px;
+      --shadow: 0 18px 50px rgba(15, 23, 42, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(20, 184, 166, 0.18), transparent 34rem),
+        radial-gradient(circle at 90% 10%, rgba(37, 99, 235, 0.12), transparent 30rem),
+        var(--bg);
+      line-height: 1.78;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 38px 20px 56px;
+    }
+
+    .hero,
+    .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 44px;
+      background: linear-gradient(135deg, #0f766e, #115e59);
+      color: white;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.92rem;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(2.05rem, 6vw, 3.6rem);
+      line-height: 1.05;
+      letter-spacing: -0.055em;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(1.35rem, 3vw, 1.9rem);
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1.08rem;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: rgba(255,255,255,0.86);
+      font-size: 1.05rem;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-weight: 750;
+      color: var(--primary-dark);
+      background: white;
+      border: 1px solid white;
+    }
+
+    .button.secondary {
+      color: white;
+      background: rgba(255,255,255,0.13);
+      border-color: rgba(255,255,255,0.32);
+    }
+
+    .button:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .section {
+      margin-top: 22px;
+      padding: 32px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .notice {
+      border-left: 4px solid var(--primary);
+      border-radius: 16px;
+      padding: 16px 18px;
+      background: var(--primary-soft);
+      color: #134e4a;
+      margin: 16px 0;
+    }
+
+    .notice.warning {
+      border-left-color: #f59e0b;
+      background: var(--warning-bg);
+      color: var(--warning-text);
+    }
+
+    ul {
+      margin: 8px 0 18px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+      color: var(--muted);
+    }
+
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .toc a {
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 14px;
+      background: white;
+      font-weight: 700;
+    }
+
+    .lang-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .contact {
+      background: #0f172a;
+      color: white;
+    }
+
+    .contact p {
+      color: rgba(255,255,255,0.78);
+    }
+
+    .contact a {
+      color: #99f6e4;
+      font-weight: 800;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 24px;
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 760px) {
+      .hero,
+      .section {
+        padding: 26px;
+      }
+
+      .toc {
+        grid-template-columns: 1fr;
+      }
+
+      .lang-title {
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="lang-switch">
-            <a href="#chinese">繁體中文</a> | <a href="#english">English</a>
-        </div>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">CoinTrack Privacy Policy</span>
+      <h1>Privacy Policy</h1>
+      <p>
+        This policy explains how CoinTrack handles data when you use the app, including local storage,
+        optional account services, cloud sync, voice input, AI features, advertising, analytics, and crash reports.
+      </p>
+      <div class="nav">
+        <a class="button" href="#zh">繁體中文</a>
+        <a class="button secondary" href="#en">English</a>
+        <a class="button secondary" href="SupportPage.html">Support</a>
+        <a class="button secondary" href="index.html">Home</a>
+      </div>
+    </section>
 
-        <!-- 繁體中文版本 -->
-        <section id="chinese">
-            <h1>🔐 CoinTrack 隱私權政策</h1>
-            <p class="subtitle">我們重視您的隱私</p>
+    <section class="section">
+      <h2>Summary</h2>
+      <p class="muted">
+        CoinTrack is designed as a local-first personal finance tool. Your financial records, diary content,
+        and personal settings are stored on your device by default. Some optional features may require limited
+        processing by third-party services, such as sign-in, cloud sync, speech recognition, AI assistance,
+        advertisements, analytics, or crash diagnostics.
+      </p>
+      <div class="notice warning">
+        This page is provided for transparency and user support. It is not legal advice.
+      </div>
+      <div class="toc">
+        <a href="#zh">Traditional Chinese Policy</a>
+        <a href="#en">English Policy</a>
+      </div>
+    </section>
 
-            <div class="highlight">
-                <strong>重點摘要：</strong>CoinTrack 將您的資料儲存在您的裝置本地，我們不會收集、儲存或分享您的個人財務資料。
-            </div>
+    <section class="section" id="zh">
+      <div class="lang-title">
+        <h2>CoinTrack 隱私權政策</h2>
+        <span class="muted">最後更新：2026 年 7 月 6 日</span>
+      </div>
 
-            <h2>1. 資料收集</h2>
-            <h3>我們收集的資料</h3>
-            <ul>
-                <li><strong>帳號資訊</strong>：當您使用 Apple ID 或 Google 帳號登入時，我們僅獲取您的顯示名稱和電子郵件地址用於識別身份。</li>
-                <li><strong>使用數據</strong>：匿名的應用程式使用統計，用於改善用戶體驗。</li>
-            </ul>
+      <p>
+        CoinTrack（以下稱「本應用程式」或「我們」）重視您的隱私。本政策說明我們在您使用本應用程式時，
+        如何處理資料，以及您可以如何管理或刪除資料。
+      </p>
 
-            <h3>我們不收集的資料</h3>
-            <ul>
-                <li>您的財務交易記錄</li>
-                <li>您的語音錄音內容</li>
-                <li>您的日記內容</li>
-                <li>您的位置資訊</li>
-            </ul>
+      <h3>1. 我們處理的資料</h3>
+      <p>根據您使用的功能不同，本應用程式可能會處理以下資料：</p>
+      <ul>
+        <li><strong>本機資料：</strong>收入、支出、預算、分類、日記、分帳紀錄、應用程式設定與偏好。</li>
+        <li><strong>帳號資料：</strong>若您選擇使用 Apple ID 或 Google 帳號登入，我們可能會取得顯示名稱、電子郵件地址或帳號識別碼，用於登入與帳號綁定。</li>
+        <li><strong>語音資料：</strong>若您使用語音輸入，語音內容可能由裝置系統或語音辨識服務處理，以轉換成文字或記帳內容。</li>
+        <li><strong>AI 功能資料：</strong>若您使用 AI 分類、摘要或輔助輸入等功能，您提交的文字、金額、分類或上下文可能會被處理，以提供相關功能。</li>
+        <li><strong>使用與診斷資料：</strong>我們可能會收集匿名或彙總的使用統計、裝置資訊、App 版本、錯誤紀錄與崩潰報告，用於改善穩定性與使用體驗。</li>
+        <li><strong>廣告資料：</strong>若 App 顯示廣告，廣告服務提供者可能會處理裝置識別碼、廣告互動資料或相關技術資訊。</li>
+      </ul>
 
-            <h2>2. 資料儲存</h2>
-            <p>您的所有記帳資料、日記內容和個人設定都儲存在您的裝置本地。我們採用 iOS 系統的安全儲存機制來保護您的資料。</p>
+      <h3>2. 資料儲存方式</h3>
+      <p>
+        您的財務紀錄、日記與個人設定預設儲存在您的裝置本機。若您啟用雲端同步或帳號同步功能，
+        相關資料可能會透過加密連線傳輸，以便在您的裝置之間同步。
+      </p>
 
-            <h2>3. 語音功能</h2>
-            <p>CoinTrack 使用 Apple 的語音識別服務來處理您的語音輸入。語音資料由 Apple 處理，我們不會儲存或傳輸您的語音錄音。</p>
+      <h3>3. 我們如何使用資料</h3>
+      <ul>
+        <li>提供記帳、預算、統計、語音輸入、日記、分帳與同步功能。</li>
+        <li>協助您登入帳號、恢復資料或在多裝置之間同步。</li>
+        <li>改善 App 的穩定性、效能、功能設計與使用體驗。</li>
+        <li>在您啟用或使用相關功能時，提供 AI、廣告、分析或崩潰診斷服務。</li>
+        <li>回覆您的支援、隱私或資料刪除請求。</li>
+      </ul>
 
-            <h2>4. 第三方服務</h2>
-            <p>我們使用以下第三方服務：</p>
-            <ul>
-                <li><strong>Apple Sign In</strong>：用於帳號驗證</li>
-                <li><strong>Google Sign In</strong>：用於帳號驗證</li>
-                <li><strong>Apple Speech Recognition</strong>：用於語音轉文字</li>
-            </ul>
-            <p>這些服務有各自的隱私權政策，建議您查閱相關條款。</p>
+      <h3>4. 第三方服務</h3>
+      <p>本應用程式可能使用以下第三方或平台服務。實際使用項目會依 App 版本與您啟用的功能而有所不同：</p>
+      <ul>
+        <li>Apple Sign In、Google Sign-In：用於帳號登入與身份驗證。</li>
+        <li>Apple Speech Recognition 或裝置語音服務：用於語音轉文字。</li>
+        <li>雲端同步或資料備份服務：用於跨裝置同步與資料恢復。</li>
+        <li>AI 服務提供者：用於語音文字理解、分類、摘要或輔助輸入。</li>
+        <li>Google AdMob 或其他廣告服務：用於顯示廣告或獎勵型廣告。</li>
+        <li>分析與崩潰報告服務：用於統計匿名使用情況與修復問題。</li>
+      </ul>
+      <p>第三方服務會依其各自的隱私政策處理資料。建議您閱讀相關服務的政策與設定選項。</p>
 
-            <h2>5. 資料安全</h2>
-            <p>我們採取以下措施保護您的資料：</p>
-            <ul>
-                <li>所有資料儲存在裝置本地</li>
-                <li>使用 iOS 系統級加密</li>
-                <li>不透過網路傳輸敏感資料</li>
-            </ul>
+      <h3>5. 資料分享</h3>
+      <p>
+        我們不會出售您的個人財務資料。除非為了提供您啟用的功能、遵守法律要求、保護使用者安全，
+        或處理支援請求，否則我們不會主動分享可識別您的個人資料。
+      </p>
 
-            <h2>6. 您的權利</h2>
-            <p>您可以隨時：</p>
-            <ul>
-                <li>刪除應用程式以移除所有本地資料</li>
-                <li>在設定中管理您的帳號綁定</li>
-                <li>匯出您的資料</li>
-            </ul>
+      <h3>6. 資料保存與刪除</h3>
+      <ul>
+        <li>本機資料會保留在您的裝置中，直到您在 App 內刪除、重置資料，或從裝置移除 App。</li>
+        <li>若您啟用雲端同步，雲端資料的保存時間會依同步服務、帳號設定與 App 功能而定。</li>
+        <li>您可以透過 App 內設定管理資料、登出帳號、關閉同步、匯出資料或刪除資料（若該版本提供）。</li>
+        <li>如需協助刪除帳號或處理隱私請求，請透過本政策下方的聯絡方式與我們聯繫。</li>
+      </ul>
 
-            <h2>7. 兒童隱私</h2>
-            <p>CoinTrack 不針對 13 歲以下兒童設計，我們不會故意收集兒童的個人資訊。</p>
+      <h3>7. 權限使用</h3>
+      <p>本應用程式可能要求以下權限，以提供相應功能：</p>
+      <ul>
+        <li>麥克風與語音辨識：用於語音記帳或語音輸入。</li>
+        <li>通知：用於預算提醒、記帳提醒或重要通知。</li>
+        <li>網路存取：用於登入、同步、AI 功能、廣告、分析或支援服務。</li>
+      </ul>
+      <p>您可以在系統設定中管理或撤回相關權限，但部分功能可能因此無法正常使用。</p>
 
-            <h2>8. 政策更新</h2>
-            <p>我們可能會不時更新本隱私權政策。任何重大變更將透過應用程式內通知告知您。</p>
-        </section>
+      <h3>8. 兒童隱私</h3>
+      <p>
+        CoinTrack 不以 13 歲以下兒童為主要對象。我們不會故意收集兒童的個人資料。
+        若您認為兒童資料被不當提供給我們，請與我們聯繫，我們會採取合理措施處理。
+      </p>
 
-        <hr style="margin: 50px 0; border: none; border-top: 2px solid #e2e8f0;">
+      <h3>9. 安全措施</h3>
+      <p>
+        我們採取合理的技術與管理措施保護資料，例如本機儲存、系統級保護、加密傳輸與最小化資料處理。
+        但任何系統或網路傳輸都無法保證絕對安全，請妥善保管您的裝置與帳號。
+      </p>
 
-        <!-- English Version -->
-        <section id="english">
-            <h1>🔐 CoinTrack Privacy Policy</h1>
-            <p class="subtitle">Your Privacy Matters to Us</p>
+      <h3>10. 政策更新</h3>
+      <p>
+        我們可能會不定期更新本政策。若內容有重大變更，我們會透過 App、網站或其他合理方式告知。
+        更新後繼續使用本應用程式，即表示您了解更新後的政策內容。
+      </p>
+    </section>
 
-            <div class="highlight">
-                <strong>Key Summary:</strong> CoinTrack stores your data locally on your device. We do not collect, store, or share your personal financial data.
-            </div>
+    <section class="section" id="en">
+      <div class="lang-title">
+        <h2>CoinTrack Privacy Policy</h2>
+        <span class="muted">Last updated: July 6, 2026</span>
+      </div>
 
-            <h2>1. Data Collection</h2>
-            <h3>What We Collect</h3>
-            <ul>
-                <li><strong>Account Information</strong>: When you sign in with Apple ID or Google, we only receive your display name and email address for identification purposes.</li>
-                <li><strong>Usage Data</strong>: Anonymous app usage statistics to improve user experience.</li>
-            </ul>
+      <p>
+        CoinTrack (the "App", "we", or "us") respects your privacy. This policy explains how data is handled
+        when you use the App and how you can manage or delete your data.
+      </p>
 
-            <h3>What We Don't Collect</h3>
-            <ul>
-                <li>Your financial transaction records</li>
-                <li>Your voice recordings</li>
-                <li>Your diary content</li>
-                <li>Your location information</li>
-            </ul>
+      <h3>1. Data we process</h3>
+      <p>Depending on the features you use, the App may process the following types of data:</p>
+      <ul>
+        <li><strong>Local data:</strong> income, expenses, budgets, categories, diary entries, split bill records, app settings, and preferences.</li>
+        <li><strong>Account data:</strong> if you sign in with Apple ID or Google, we may receive your display name, email address, or account identifier for sign-in and account linking.</li>
+        <li><strong>Voice data:</strong> if you use voice input, your voice may be processed by device or speech recognition services to convert speech into text or expense records.</li>
+        <li><strong>AI feature data:</strong> if you use AI classification, summaries, or assisted input, the text, amount, category, or context you submit may be processed to provide those features.</li>
+        <li><strong>Usage and diagnostics:</strong> anonymous or aggregated usage statistics, device information, app version, error logs, and crash reports may be collected to improve stability and user experience.</li>
+        <li><strong>Advertising data:</strong> if ads are displayed, advertising providers may process device identifiers, ad interaction data, and related technical information.</li>
+      </ul>
 
-            <h2>2. Data Storage</h2>
-            <p>All your expense records, diary entries, and personal settings are stored locally on your device. We use iOS system security mechanisms to protect your data.</p>
+      <h3>2. Data storage</h3>
+      <p>
+        Your financial records, diary content, and personal settings are stored locally on your device by default.
+        If you enable cloud sync or account synchronization, relevant data may be transmitted over encrypted connections
+        to provide sync across your devices.
+      </p>
 
-            <h2>3. Voice Features</h2>
-            <p>CoinTrack uses Apple's Speech Recognition service to process your voice input. Voice data is processed by Apple, and we do not store or transmit your voice recordings.</p>
+      <h3>3. How we use data</h3>
+      <ul>
+        <li>To provide expense tracking, budgets, statistics, voice input, diary, split bill, and sync features.</li>
+        <li>To help you sign in, restore data, or sync across devices.</li>
+        <li>To improve app stability, performance, feature design, and user experience.</li>
+        <li>To provide AI, advertising, analytics, or crash diagnostic services when enabled or used.</li>
+        <li>To respond to support, privacy, or data deletion requests.</li>
+      </ul>
 
-            <h2>4. Third-Party Services</h2>
-            <p>We use the following third-party services:</p>
-            <ul>
-                <li><strong>Apple Sign In</strong>: For account authentication</li>
-                <li><strong>Google Sign In</strong>: For account authentication</li>
-                <li><strong>Apple Speech Recognition</strong>: For speech-to-text</li>
-            </ul>
-            <p>These services have their own privacy policies, which we encourage you to review.</p>
+      <h3>4. Third-party services</h3>
+      <p>The App may use the following third-party or platform services. Actual services may vary by app version and enabled features:</p>
+      <ul>
+        <li>Apple Sign In and Google Sign-In for authentication.</li>
+        <li>Apple Speech Recognition or device speech services for speech-to-text.</li>
+        <li>Cloud sync or backup services for cross-device sync and data recovery.</li>
+        <li>AI service providers for text understanding, categorization, summaries, or assisted input.</li>
+        <li>Google AdMob or other advertising services for ads or rewarded ads.</li>
+        <li>Analytics and crash reporting services for anonymous usage statistics and issue diagnosis.</li>
+      </ul>
+      <p>Third-party services process data under their own privacy policies. We recommend reviewing their policies and settings.</p>
 
-            <h2>5. Data Security</h2>
-            <p>We take the following measures to protect your data:</p>
-            <ul>
-                <li>All data stored locally on device</li>
-                <li>iOS system-level encryption</li>
-                <li>No transmission of sensitive data over network</li>
-            </ul>
+      <h3>5. Data sharing</h3>
+      <p>
+        We do not sell your personal financial data. We do not intentionally share personally identifiable data except
+        where necessary to provide features you enable, comply with legal obligations, protect users, or handle support requests.
+      </p>
 
-            <h2>6. Your Rights</h2>
-            <p>You can at any time:</p>
-            <ul>
-                <li>Delete the app to remove all local data</li>
-                <li>Manage your account bindings in settings</li>
-                <li>Export your data</li>
-            </ul>
+      <h3>6. Retention and deletion</h3>
+      <ul>
+        <li>Local data remains on your device until you delete it in the App, reset data, or remove the App from your device.</li>
+        <li>If cloud sync is enabled, retention of cloud data depends on the sync service, account settings, and App features.</li>
+        <li>You can use in-app settings to manage data, sign out, disable sync, export data, or delete data where supported by your version.</li>
+        <li>For help with account deletion or privacy requests, contact us using the information below.</li>
+      </ul>
 
-            <h2>7. Children's Privacy</h2>
-            <p>CoinTrack is not designed for children under 13, and we do not knowingly collect personal information from children.</p>
+      <h3>7. Permissions</h3>
+      <p>The App may request the following permissions to provide related features:</p>
+      <ul>
+        <li>Microphone and speech recognition for voice expense tracking or voice input.</li>
+        <li>Notifications for budget reminders, recording reminders, or important notices.</li>
+        <li>Network access for sign-in, sync, AI features, ads, analytics, or support services.</li>
+      </ul>
+      <p>You can manage or revoke permissions in system settings. Some features may not work after permissions are revoked.</p>
 
-            <h2>8. Policy Updates</h2>
-            <p>We may update this privacy policy from time to time. Any significant changes will be notified through in-app notifications.</p>
-        </section>
+      <h3>8. Children's privacy</h3>
+      <p>
+        CoinTrack is not primarily intended for children under 13. We do not knowingly collect personal information from children.
+        If you believe a child has provided personal information to us, please contact us and we will take reasonable steps to handle it.
+      </p>
 
-        <div class="contact">
-            <h3>📧 聯絡我們 | Contact Us</h3>
-            <p>如有任何隱私相關問題，請聯繫：</p>
-            <p>For any privacy-related questions, please contact:</p>
-            <p><strong>Email:</strong> hokidev26@gmail.com</p>
-        </div>
+      <h3>9. Security</h3>
+      <p>
+        We use reasonable technical and organizational measures to protect data, such as local storage, system-level protections,
+        encrypted transmission, and data minimization. However, no system or network transmission can be guaranteed to be completely secure.
+        Please keep your device and accounts protected.
+      </p>
 
-        <p class="date">最後更新 | Last Updated: 2026年1月28日 | January 28, 2026</p>
-    </div>
+      <h3>10. Policy updates</h3>
+      <p>
+        We may update this policy from time to time. If there are significant changes, we will notify users through the App,
+        website, or another reasonable method. Continued use of the App after updates means you understand the updated policy.
+      </p>
+    </section>
+
+    <section class="section contact">
+      <h2>Contact</h2>
+      <p>If you have questions about this policy, privacy requests, or data deletion requests, please contact:</p>
+      <p><a href="mailto:eonf0331@gmail.com">eonf0331@gmail.com</a></p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 CoinTrack. All rights reserved. Last updated: July 6, 2026.</p>
+    </footer>
+  </main>
 </body>
 </html>

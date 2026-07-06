@@ -1,91 +1,38 @@
-# CoinTrack Support
+# CoinTrack Support Pages
 
-## Privacy Policy / 隱私政策
+This repository contains the public support and privacy pages for **CoinTrack**, a personal finance tracking app.
 
-**Last Updated: December 2025**
+It is intended for user support, App Store / Play Store review information, and public privacy documentation. It does **not** contain the CoinTrack application source code.
 
----
+## Live pages
 
-### 中文版
+- Support home: <https://hokidev26.github.io/cointrack-support/>
+- Support page: <https://hokidev26.github.io/cointrack-support/SupportPage.html>
+- Privacy policy: <https://hokidev26.github.io/cointrack-support/PrivacyPolicy.html>
 
-CoinTrack（以下簡稱「本應用程式」）重視您的隱私。本隱私政策說明我們如何收集、使用和保護您的資料。
+## Contents
 
-#### 收集的資料
+```txt
+index.html          Main support landing page
+SupportPage.html    Detailed support and FAQ page
+PrivacyPolicy.html  Privacy policy in Traditional Chinese and English
+README.md           Repository overview
+```
 
-**本機儲存的資料：**
-- 財務記錄（收入、支出、預算）
-- 待辦事項和日記內容
-- 應用程式設定和偏好
+## About CoinTrack
 
-**帳戶資訊（選擇性）：**
-- Apple ID 或 Google 帳號（僅用於雲端同步）
+CoinTrack helps users record income and expenses, review budgets and spending summaries, use voice input, keep simple notes, and manage shared expenses.
 
-**自動收集的資料：**
-- 應用程式使用統計（用於改善服務）
-- 崩潰報告和診斷數據
+The app is designed as a local-first personal finance tool. Financial records are stored on the user's device by default. Optional features such as account sign-in, cloud sync, voice recognition, AI assistance, ads, analytics, or crash reports may process limited data when those features are enabled or used.
 
-#### 廣告
+## Contact
 
-本應用程式使用 Google AdMob 顯示廣告。AdMob 可能會收集裝置識別碼和廣告互動數據。您可以透過觀看廣告獲得額外的 AI 使用次數。
+For support, privacy requests, or data deletion requests, contact:
 
-#### 資料安全
+<eonf0331@gmail.com>
 
-- 所有財務數據優先儲存在您的裝置本機
-- 雲端同步採用加密傳輸
-- 我們不會出售或分享您的個人資料給第三方
+## Last updated
 
-#### 您的權利
+July 6, 2026
 
-您可以隨時：
-- 刪除應用程式中的所有數據
-- 登出雲端帳戶
-- 停用通知功能
-
----
-
-### English Version
-
-CoinTrack ("the App") values your privacy. This Privacy Policy explains how we collect, use, and protect your data.
-
-#### Data We Collect
-
-**Stored Locally:**
-- Financial records (income, expenses, budgets)
-- Todo items and diary entries
-- App settings and preferences
-
-**Account Information (Optional):**
-- Apple ID or Google account (for cloud sync only)
-
-**Automatically Collected:**
-- App usage statistics (to improve our service)
-- Crash reports and diagnostics
-
-#### Advertising
-
-This App uses Google AdMob to display advertisements. AdMob may collect device identifiers and ad interaction data. You can watch ads to earn additional AI usage.
-
-#### Data Security
-
-- All financial data is stored locally on your device first
-- Cloud sync uses encrypted transmission
-- We do not sell or share your personal data with third parties
-
-#### Your Rights
-
-You can at any time:
-- Delete all data within the App
-- Sign out of cloud accounts
-- Disable notifications
-
----
-
-## Contact Us / 聯絡我們
-
-If you have any questions, please contact us at:
-
-📧 **[eonf0331@gmail.com]**
-
----
-
-© 2025 CoinTrack. All rights reserved.
+© 2026 CoinTrack. All rights reserved.

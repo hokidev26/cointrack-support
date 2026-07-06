@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CoinTrack support center, help page, contact information, and privacy policy links.">
+  <title>CoinTrack Support Center</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --primary-soft: #ccfbf1;
+      --accent: #2563eb;
+      --warning: #92400e;
+      --shadow: 0 22px 60px rgba(15, 23, 42, 0.10);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(20, 184, 166, 0.22), transparent 34rem),
+        radial-gradient(circle at top right, rgba(37, 99, 235, 0.16), transparent 28rem),
+        var(--bg);
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(15, 118, 110, 0.96), rgba(17, 94, 89, 0.96));
+      color: white;
+      border-radius: var(--radius);
+      padding: 56px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -120px auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.15);
+      font-size: 0.92rem;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 20px 0 12px;
+      font-size: clamp(2.25rem, 6vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.055em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 1.08rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      color: white;
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(8px);
+    }
+
+    .button.primary {
+      color: var(--primary-dark);
+      background: white;
+      border-color: white;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .section {
+      margin-top: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      letter-spacing: -0.035em;
+    }
+
+    .section-header p,
+    .muted {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px;
+      background: #fff;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+      padding: 18px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 750;
+      color: #1e293b;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .notice {
+      border-left: 4px solid var(--primary);
+      border-radius: 16px;
+      padding: 18px 20px;
+      background: var(--primary-soft);
+      color: #134e4a;
+    }
+
+    .notice.warning {
+      border-left-color: #f59e0b;
+      background: #fffbeb;
+      color: var(--warning);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: #0f172a;
+      color: white;
+      border-radius: 22px;
+      padding: 28px;
+    }
+
+    .contact-card p {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .contact-card a {
+      color: #99f6e4;
+      font-weight: 800;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 28px;
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .section {
+        padding: 28px;
+      }
+
+      .grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .section-header {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="eyebrow">CoinTrack App Support</span>
+      <h1>Support Center</h1>
+      <p>
+        CoinTrack helps you record expenses, understand spending habits, manage budgets, and keep simple personal notes.
+        This page provides help information, privacy details, and contact options for users.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="mailto:eonf0331@gmail.com">Contact Support</a>
+        <a class="button" href="PrivacyPolicy.html">Privacy Policy</a>
+        <a class="button" href="#faq">View FAQ</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2>What CoinTrack provides</h2>
+          <p>Core features designed for lightweight personal finance tracking.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Expense tracking</h3>
+          <p>Record income and expenses, organize transactions, and review your daily spending.</p>
+        </article>
+        <article class="card">
+          <h3>Budgets and insights</h3>
+          <p>Follow budget progress and view summaries that help you understand your habits.</p>
+        </article>
+        <article class="card">
+          <h3>Voice input</h3>
+          <p>Add records faster with voice recognition when supported by your device and settings.</p>
+        </article>
+        <article class="card">
+          <h3>Diary and split bills</h3>
+          <p>Keep notes for important records and split shared expenses with friends or family.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <h2>Data and privacy</h2>
+        <p class="muted">
+          CoinTrack is designed with local-first storage. Financial records are stored on your device by default.
+          Optional services such as account sign-in, cloud sync, voice recognition, AI assistance, ads, analytics,
+          or crash reports may process limited data only when those features are used or enabled.
+        </p>
+        <p class="notice">
+          For the full details, please read the dedicated <a href="PrivacyPolicy.html">Privacy Policy</a>.
+        </p>
+      </div>
+      <aside class="contact-card">
+        <h2>Need help?</h2>
+        <p>
+          If you have questions, bug reports, privacy requests, or account-related issues, contact us by email.
+        </p>
+        <p><a href="mailto:eonf0331@gmail.com">eonf0331@gmail.com</a></p>
+        <p class="muted">Typical response time: 24-48 hours.</p>
+      </aside>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-header">
+        <div>
+          <h2>Frequently asked questions</h2>
+          <p>Common questions about using CoinTrack.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>How do I add an expense?</summary>
+          <p>Open the app, tap the add button, enter the amount, category, date, and note if needed, then save the record.</p>
+        </details>
+        <details>
+          <summary>How does voice input work?</summary>
+          <p>Tap the voice input option and speak clearly, for example: “Lunch 150 today.” CoinTrack will help convert the sentence into a record. You can review and edit the result before saving.</p>
+        </details>
+        <details>
+          <summary>Where is my financial data stored?</summary>
+          <p>Your financial records are stored locally on your device by default. If cloud sync is enabled, related data may be transmitted securely to provide synchronization across your devices.</p>
+        </details>
+        <details>
+          <summary>How can I export or delete my data?</summary>
+          <p>Use the in-app settings if export or deletion options are available. You may also delete the app to remove local data from the device. For privacy requests, contact support by email.</p>
+        </details>
+        <details>
+          <summary>Is CoinTrack financial advice?</summary>
+          <p>No. CoinTrack is a personal recording and organization tool. Any summaries or insights are for reference only and should not be considered financial, investment, tax, or legal advice.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>中文支援摘要</h2>
+      <p class="muted">
+        CoinTrack 是個人記帳與預算管理工具，可協助記錄收入支出、查看消費摘要、使用語音輸入、日記與分帳等功能。
+        如需協助、回報問題、提出隱私請求或刪除資料，請發送郵件至
+        <a href="mailto:eonf0331@gmail.com">eonf0331@gmail.com</a>。
+      </p>
+      <p class="notice warning">
+        本應用程式提供的統計與摘要僅供個人記錄參考，不構成財務、投資、稅務或法律建議。
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 CoinTrack. All rights reserved. Last updated: July 6, 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
